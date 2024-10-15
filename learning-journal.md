@@ -189,3 +189,25 @@ MoSCoW
 ## 27.09.2024
 * ik heb een code/design review gedaan op de code van yujing [code/design review: issues](https://github.com/lisagjh/voorhoede/issues/4) [code/design review: issues](https://github.com/lisagjh/voorhoede/issues/5)
 * [accessibility test](https://github.com/fdnd-agency/buurtcampus-oost/issues/140)
+
+
+# sprint 15 choices choices
+
+# 14.10.2024 Hoe kies je een nieuw tech-stack?
+
+Welke factoren komen kijken bij het kiezen van een tech-stack?
+* schaalbaarheid
+* expertise
+* kosten
+* performance
+* onderhoud
+* grootte van je team
+
+Verder moet je nog rekening houden met
+* user experience
+* content manager experience
+* developer experience
+
+
+
+
