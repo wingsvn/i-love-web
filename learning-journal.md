@@ -211,3 +211,59 @@ Verder moet je nog rekening houden met
 
 
 
+# sprint 16 
+
+## advanced component concepts
+
+### component library
+component library: herbruikbare en generieke componenten die je aan je project kunt toevoegen
+
+* versnelt ontwikkeling door hergebruik — grote kans op fouten (fout in component = fout in hele website)
+* zorgt voor consistentie in projecten — alles ziet er hetzelfde uit (geen bijzonderheid/heel generiek)
+* vergroot de onderhoudbaarheid — vergroot de chaos (strikte naamgeving nodig, conventies
+
+chaos bedwingen door afspraken te maken over:
+* naamgeving componenten
+* naamgeving van variaties van componenten
+* naamgeving van properties binnen componenten
+* meta naamgeving: componenten, patronen, etc
+* indeling van de $lib folder
+
+### meta naamgeving
+* een hiërarchische benadering om het over bepaalde soorten componenten te hebben
+* in principe is alles componenten maar noem we: geneste componenten, variaties componenten, samengestelde componenten
+
+5 manieren om je component library in te delen:
+**structuur — page-section component**
+* pages: volledige pagina’s of schermen met een specifieke context bestaand uit section bij de homepage
+* section: secties van een pagina bestaand uit componenten, bij een hero-banner, een content-sectie, een footer
+* component: herbruikbare componenten binnen de secties bijv knoppen
+
+**structuur — funcional layering**
+* inputs: components voor gebruikersinvoer bij knoppen of formulieren
+* display: componenten voor het weergeven van informatie (tabellen en grafieken
+* navigation: componenten voor navigatie menu breadcrumbs, skip-to-content
+* structural: layout componenten die structuur bieden< grids, containers
+
+**structuur — LEGO**
+* bricks: kleine niet herbruikbare stukjes, eg icoon of textblok
+* blocks: herbruikbare basis componenten, eg een knop of afbeeldingen (specifieke element)
+* assemblages: gecombineerde componenten met een specifieke functie, formulier of een kaart
+* constructions: complexe pagina’s of templates, eg. dashboard
+
+
+**structuur — atomic design**
+* atoms: basis bouwblokken van je pagina, html elementen eg label, input, button
+* molecules: een groep atomen bij elkaar eg. een zoekformulier met label, input en button
+* organisms: een groepje molecules die samen een sectie van eg. website vormen, eg header balk met een zoekformulier
+* templates: een grote groep organismen die samen een paginatype vormen een overzichtspagina of detailpagina
+* pages: ingevulde template met inhoud
+
+*atomic designs is a methode om design systems te creëren.
+
+**structuur — presenter-container**
+* presentational components: UI specifieke stateless componenten die bepalen hoe data wordt getoond eg een afbeelding
+* container components: componenten die de presentational components van data voorzien en hun gedrag bepalen
+* compositions: combinatie van container en presentationa; components die specifieke pagina-secties vormen
+
+
