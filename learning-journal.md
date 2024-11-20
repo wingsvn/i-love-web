@@ -266,4 +266,54 @@ chaos bedwingen door afspraken te maken over:
 * container components: componenten die de presentational components van data voorzien en hun gedrag bepalen
 * compositions: combinatie van container en presentationa; components die specifieke pagina-secties vormen
 
+## 20 november 2024 -- the new responsive: mediaqueries, container queries & user reference queries
+
+https://web.dev/articles/new-responsive
+
+**the new responsive (circle)**
+* container styles - container queries, scoped styles, and component-specific styles
+* macro layouts -
+* viewport and form-factor - viewport and form-factor media queries
+* user prefrence styles - user-preference queries
+
+
+responsive to the user
+* rekening houden met de instellingen van een gebruiker
+    * eg. darkmode
+
+de anatomie van een media query:
+@media screen and (width >= 35rem) { 
+…
+…
+}
+
+* aanroep van de mediaquery: @media
+* media types: screen, print, speech, protection, braille
+* media features: width >
+
+
+**user preference media features level 5**
+* prefers-reduced motion
+* prefers-reduced-transparency
+* prefers-contrast
+* forced colors
+* prefers-color-scheme
+* prefers-reduced-data (gebruiker die minder data wilt laden, vanwege niet genoeg aan 4G)
+* inverted colours (color-media-features)
+
+@media screen and (prefers-colour-scheme: dark) {
+…
+…
+}
+
+**container queries**
+* containers kijken hoeveel ruimte ze hebben, op basis van de beschikbare ruimte wordt er bepaald of sommige elementen wel of niet worden gedisplayed. 
+    * eg. een container met product-informatie of een ‘add’ button
+* met container queries kun je meer de context in gaan in vergelijking met media queries.
+* container style queries
+
+**form-factor**
+* @media(spanning: single-fold-vertica) { … … }
+* vouwen van een single to two screen (denk aan foldable phones)
+
 
